@@ -7,7 +7,7 @@ const fsPromise = require('fs').promises
 // get all products
 const getProduct = asyncHandler(async (req, res) => {
   const { category, type, page , search } = req.query;
-  const itemsPerPage = 9;
+  const itemsPerPage = 5;
   const currentPage = page ? parseInt(page) : 1;
   
 
